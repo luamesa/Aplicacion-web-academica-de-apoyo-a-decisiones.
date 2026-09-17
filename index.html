@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente de IA en Derecho Penal | Análisis Operativo</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Toma de Decisiones Asistida por IA en Derecho Penal</h1>
+        <p>Herramienta analítica para evaluar riesgos procesales y predecir tipificación de conductas típicas bajo el sistema penal acusatorio.</p>
+    </header>
+
+    <div class="container">
+        <!-- 1. Breve Descripción del Problema -->
+        <section class="card">
+            <h2>1. Descripción de la Problemática</h2>
+            <p>
+                En el ejercicio del <strong>Derecho Penal</strong>, los juristas, defensores y fiscales enfrentan un volumen masivo de evidencias, hechos jurídicos y jurisprudencia en constante evolución. La valoración del riesgo procesal, la determinación de la medida de aseguramiento adecuada y la calificación preliminar del tipo penal requieren evaluar múltiples variables de forma rápida y objetiva. 
+            </p>
+            <p style="margin-top: 10px;">
+                Esta herramienta asistida por <strong>Inteligencia Artificial</strong> analiza los datos del caso para predecir la calificación de la conducta penal, evaluar la procedencia de medidas cautelares y sugerir líneas de investigación prioritarias, optimizando la toma de decisiones judiciales y de defensa.
+            </p>
+        </section>
+
+
+        <section class="card">
+            <h2>2. Formulario del Caso Penal</h2>
+            <form id="caseForm">
+                <div class="form-group">
+                    <label for="conducta">Conducta Investigada / Presunto Delito:</label>
+                    <select id="conducta" required>
+                        <option value="">-- Seleccione una opción --</option>
+                        <option value="hurto">Hurto Calificado y Agravado</option>
+                        <option value="estafa">Estafa Masiva o Agravada</option>
+                        <option value="lesiones">Lesiones Personales</option>
+                        <option value="homicidio">Homicidio Culpable / Doloso</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="antecedentes">Antecedentes Judiciales del Imputado:</label>
+                    <select id="antecedentes" required>
+                        <option value="ninguno">Sin antecedentes previos</option>
+                        <option value="investigacion">Investigación activa en curso</option>
+                        <option value="condena">Condena penal previa firme</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="evidencia">Tipo de Evidencia Principal Recabada:</label>
+                    <select id="evidencia" required>
+                        <option value="testimonial">Testimonios y entrevistas</option>
+                        <option value="digital">Evidencia digital / Peritaje informático</option>
+                        <option value="forense">Dictamen médico-legal / Balística</option>
+                        <option value="flagrancia">Captura en flagrancia con elementos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hechos">Síntesis de los Hechos:</label>
+                    <textarea id="hechos" rows="4" placeholder="Describa brevemente cómo, cuándo y dónde sucedieron los hechos..." required></textarea>
+                </div>
+
+                <button type="submit">Generar Análisis y Recomendación de IA</button>
+            </form>
+
+            <div class="loading" id="loading">Analizando precedentes judiciales y normatividad vigente...</div>
+
+            <!-- 3. Simulación de Resultados -->
+            <div class="results-box" id="results">
+                <h3>3. Diagnóstico y Recomendación de la IA</h3>
+                <p><strong>Calificación Jurídica Sugerida:</strong> <span id="resCalificacion" class="tag">--</span></p>
+                <p style="margin-top: 8px;"><strong>Riesgo de Medida de Aseguramiento (Privativa de Libertad):</strong> <span id="resRiesgo">--</span></p>
+                <p style="margin-top: 8px;"><strong>Recomendación Estratégica:</strong></p>
+                <div id="resEstrategia" class="strategy-box"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>4. Conclusión: Importancia de la IA en el Derecho Penal</h2>
+            <p>
+                La implementación de modelos de Inteligencia Artificial en el ámbito penal no busca reemplazar el criterio humano ni la independencia judicial, sino actuar como un <strong>sistema de soporte a la decisión (DSS)</strong>. 
+            </p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Reducción de Sesgos:</strong> Ayuda a objetivar la valoración de medidas de aseguramiento analizando variables concretas sin prejuicios subjetivos.</li>
+                <li><strong>Eficiencia Procesal:</strong> Sistematiza miles de páginas de expedientes y jurisprudencia en cuestión de segundos.</li>
+                <li><strong>Garantía de Derechos:</strong> Proporciona argumentos sólidos respaldados por precedentes jurisprudenciales para fortalecer la acusación o la defensa legítima.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Evaluación Académica - Área de Derecho Penal y Tecnología</p>
+    </footer>
+
+    <!-- Vinculación con el código JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
