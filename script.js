@@ -4,7 +4,7 @@ document.getElementById('caseForm').addEventListener('submit', function(e) {
     document.getElementById('loading').style.display = 'block';
     document.getElementById('results').style.display = 'none';
 
-    // Simulación del tiempo de respuesta del algoritmo de IA
+
     setTimeout(() => {
         document.getElementById('loading').style.display = 'none';
         
